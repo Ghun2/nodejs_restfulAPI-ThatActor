@@ -20,11 +20,12 @@ MongoClient.connect(url, function(err, client) {
 });
 
 
+
 exports.findAll = function(req, res) {
-  db.collection('wines', function(err, collection) {
+  db.collection('ActorRecruit', function(err, collection) {
       collection.find().toArray(function(err, items) {
-          console.log(items[0].name);
-          res.send(items[0].name);
+          // console.log(items[0].name);
+          res.send(items);
       });
   });
 };
