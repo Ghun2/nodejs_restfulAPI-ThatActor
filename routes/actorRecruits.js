@@ -23,7 +23,7 @@ MongoClient.connect(url, function(err, client) {
 
 exports.findAll = function(req, res) {
   db.collection('ActorRecruit', function(err, collection) {
-      collection.find().toArray(function(err, items) {
+      collection.find().sort( { "date": -1, "time": -1 } ).limit(10).toArray(function(err, items) {
           // console.log(items[0].name);
           res.send(items);
       });
