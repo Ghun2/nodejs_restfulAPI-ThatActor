@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Ghun2/nodejs_restfulAPI-ThatActor#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "mongodb": "^3.0.7",
     "morgan": "^1.9.0"
   }
